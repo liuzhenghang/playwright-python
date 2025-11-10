@@ -36,7 +36,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 安装Playwright浏览器（跳过系统依赖，我们已经手动安装了）
-RUN playwright install chromium chromium-headless-shell --with-deps
+RUN playwright install chromium chromium-headless-shell --no-deps
 
 # 创建数据目录用于存储登录状态
 RUN mkdir -p /playwright/session_data
