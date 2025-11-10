@@ -38,3 +38,4 @@ RUN playwright install chromium
 
 # 创建数据目录用于存储登录状态
 RUN mkdir -p /playwright/session_data
+RUN mkdir -p /ms-playwright
