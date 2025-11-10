@@ -25,6 +25,8 @@ RUN apt-get update && apt-get install -y \
     libu2f-udev \
     libvulkan1 \
     libxshmfence1 \
+    fonts-unifont \
+    fonts-noto-color-emoji \
     && rm -rf /var/lib/apt/lists/*
 
 # 复制依赖文件
